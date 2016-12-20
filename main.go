@@ -150,7 +150,7 @@ func main() {
 
 	prepareCallback := func(solutionName string, projectName string, projectType constants.ProjectType, command *tools.Editable) {
 		if projectType == constants.ProjectTypeNunitTest {
-			customOptions[1] = projectName + ".TestResult.xml"
+			customOptions[1] = projectName + ".TestResult.xml;format=nunit2"
 			(*command).SetCustomOptions(customOptions...)
 		}
 	}
