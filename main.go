@@ -177,14 +177,14 @@ func main() {
 	}
 
 	warnings, err := builder.BuildAllNunitTestProjects(configs.XamarinConfiguration, configs.XamarinPlatform, prepareCallback, callback)
-	resultLog, logErr := testResultLogContent(resultLogPth)
+	/*resultLog, logErr := testResultLogContent(resultLogPth)
 	if logErr != nil {
 		log.Warn("Failed to read test result, error: %s", logErr)
 	}
 
 	for _, warning := range warnings {
 		log.Warn(warning)
-	}
+	}*/
 
 	if err != nil {
 		log.Error("Test run failed, error: %s", err)
@@ -193,11 +193,11 @@ func main() {
 			log.Warn("Failed to export environment: %s, error: %s", "BITRISE_XAMARIN_TEST_RESULT", err)
 		}
 
-		if resultLog != "" {
+		/*if resultLog != "" {
 			if err := exportEnvironmentWithEnvman("BITRISE_XAMARIN_TEST_FULL_RESULTS_TEXT", resultLog); err != nil {
 				log.Warn("Failed to export environment: %s, error: %s", "BITRISE_XAMARIN_TEST_FULL_RESULTS_TEXT", err)
 			}
-		}
+		}*/
 
 		os.Exit(1)
 	}
@@ -206,9 +206,9 @@ func main() {
 		log.Warn("Failed to export environment: %s, error: %s", "BITRISE_XAMARIN_TEST_RESULT", err)
 	}
 
-	if resultLog != "" {
+	/*if resultLog != "" {
 		if err := exportEnvironmentWithEnvman("BITRISE_XAMARIN_TEST_FULL_RESULTS_TEXT", resultLog); err != nil {
 			log.Warn("Failed to export environment: %s, error: %s", "BITRISE_XAMARIN_TEST_FULL_RESULTS_TEXT", err)
 		}
-	}
+	}*/
 }
