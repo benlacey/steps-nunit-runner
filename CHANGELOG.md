@@ -1,6 +1,23 @@
-## Changelog (Current version: 1.1.2)
+## Changelog (Current version: 1.4.0)
 
 -----------------
+
+### 1.4.0 (2017 Aug 09)
+
+* [0210c3d] prepare for 1.4.0
+* [fecd51c] removed mdtool, godeps-update (#15)
+* [da59c29] changelog fix
+
+### 1.3.0 (2017 Jun 27)
+
+* [21e0d8a] prepare for 1.3.0
+* [c437810] Input grouping (#14)
+* [aa010a0] specify buildtool (#13)
+
+### 1.2.0 (2017 Apr 03)
+
+* [4159abe] Prepare for 1.2.0
+* [0bc3f3a] Buildbeforetest (#12)
 
 ### 1.1.2 (2016 Dec 06)
 
@@ -46,4 +63,4 @@
 
 -----------------
 
-Updated: 2016 Dec 06
+Updated: 2017 Aug 09
