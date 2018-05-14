@@ -187,6 +187,8 @@ func main() {
 	} else {
 		warnings, err = builder.RunAllNunitTestProjects(configs.XamarinConfiguration, configs.XamarinPlatform, callback, prepareCallback)
 	}
+	
+	os.Exit(0)
 
 	resultLog, logErr := testResultLogContent(resultLogPth)
 	if logErr != nil {
